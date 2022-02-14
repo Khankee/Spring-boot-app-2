@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class TopicController {
@@ -19,7 +20,7 @@ public class TopicController {
 
     //GET DEFAULT METHOD OF SPECIFIC ONE
     @RequestMapping("/topics/{id}")
-    public Topic getTopic(@PathVariable String id){
+    public Optional<Topic> getTopic(@PathVariable String id){
         return topicService.getTopic(id);
     }
 
