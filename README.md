@@ -21,7 +21,7 @@ and used TopicController class to get, update and delete the Object's attributes
             ));
 ```
 On Spring boot with database, declared arrayList of objects removed and TopicController class User-Defined methods improved. 
-TopicRepository interface which extends CrudRepository simplifies the code. Take more attention for UPDATE method.
+TopicRepository interface which extends CrudRepository simplifies the code. Take more attention for PUT method.
 ### Comparison
 TopicService class SBA-1 (GET)(Spring Boot Application 1)
 ```java
